@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Xrabby</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+ /* header........................ */
+
+nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.15rem;
+    color: white;
+    text-shadow: 2px 2px black;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+}
+.left-nav{
+    padding: 10px !important;
+    color:#105e5f;
+    font-weight: bold;
+    text-shadow: 2px 2px #1ababd;
+    font-size: 2rem !important;
+}
+.center-nav ul{
+ display: flex;    
+}
+
+.center-nav ul li{
+    list-style: none;
+    padding: 10px;
+}
+.center-nav ul li a{
+   text-decoration: none;
+   color: white;
+}
+.center-nav ul li a:hover{
+    text-decoration: underline;
+}
+.right-nav{
+    padding: 10px;
+    display: flex;
+    margin-top: 15px;
+}
+
+.search-container {  
+    position: relative;  
+    
+}  
+
+.search-input {  
+    padding: 5px;
+    padding-left: 30px; 
+    border-radius: 8px;
+    border:3px solid #0f7f81; 
+    font-size: large;  
+}  
+
+.search-icon {  
+    position: absolute;  
+    left: 10px;  
+    top: 47%;  
+    transform: translateY(-50%);
+}
+.right-nav button{
+    margin-left: 10px;
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 15%;
+    margin-left: 10px;
+    color: #29e9ec;
+    background:var(--main-bg-color);
+    border: 2px solid;
+}
+
+.hamburger-icon {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;  
+}
+
+@media (max-width: 768px) {
+    .center-nav,
+    .right-nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        z-index: 1000;
+    }
+    .btn{
+        display: none;
+    }
+    input{
+        display: none;
+    }
+    .center-nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .center-nav.active,
+    .right-nav.active {
+        display: flex;
+    }
+}
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f3d3e, #105e5f, #0d7577);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about-intro {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .about-intro h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .about-intro p {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #e0f7f7;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px;
+            margin: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background 0.3s ease;
+            color: #ffffff;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+            animation: popIn 1.5s infinite;
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .service-description {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes popIn {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+    
+  /* footer......................... */
+
+.footer {
+    background-image: linear-gradient(135deg, #0f3d3e, #105e5f, #0d7577);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .quick-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .quick-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .quick-links li a:hover {
+    color: #a1f0ec;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  .slogan {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0 20px;
+    color: #a1f0ec;
+    font-style: italic;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+    color: #053b3b;
+  }
+ 
+  .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .footer::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .footer::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float 8s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .quick-links li a {
+      font-size: 16px;
+    }
+    .quick-links {
+    flex-direction: column;
+    align-items: center;
+  }
+    .social-icons a {
+      font-size: 20px;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  }
+ 
+  @media (max-width: 400px) {
+    .footer::before,
+    .footer::after {
+      width: 100px;
+      height: 100px;
+    }
+  }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="left-nav">Xrabby</div>
+          <div class="center-nav">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../Services-file/services.html">Services</a></li>
+              <li><a href="../Menu/menu.html">Menu</a></li>
+              <li><a href="../Gift-Card/giftCard.html">Gift Card</a></li>
+              <li><a href="../About/about.html">About</a></li>
+              <li><a href="../Reservations/reservation.html">Reservations</a></li>
+              <li><a href="../Contact/contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="right-nav">
+            <div class="search-container">
+              <input type="text" class="search-input" placeholder="Search..." />
+              <svg class="search-icon" width="16" height="16" aria-hidden="true">
+                <circle
+                  cx="6"
+                  cy="6"
+                  r="5"
+                  stroke="black"
+                  stroke-width="1"
+                  fill="none"
+                />
+                <line x1="10" y1="10" x2="15" y2="15" stroke="black" />
+              </svg>
+            </div>
+            <div><button class="btn">Sign In</button></div>
+          </div>
+        </nav>
+      </header>
+    <div class="container">
+       
+        <section class="about-intro">
+            <h1>Welcome to Xrabby</h1>
+            <p>At Xrabby, we believe in creating extraordinary experiences through flavors and ambiance. From the heartiest meals to exquisite catering, our services are designed to offer quality and delight, meeting every culinary need with a unique touch. Join us in a journey where taste and service merge to form unforgettable memories.</p>
+        </section>
+
+        
+        <section class="services">
+            <div class="service-card">
+                <i class="fas fa-utensils service-icon"></i>
+                <h2 class="service-title">Dining</h2>
+                <p class="service-description">Enjoy a fine dining experience with a curated menu, welcoming atmosphere, and attentive service at Xrabby.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-truck service-icon"></i>
+                <h2 class="service-title">Delivery</h2>
+                <p class="service-description">Bringing delicious food right to your doorstep. Fast, fresh, and always delightful.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-glass-cheers service-icon"></i>
+                <h2 class="service-title">Catering</h2>
+                <p class="service-description">From corporate events to private gatherings, Xrabby's catering service ensures a tasteful experience for every occasion.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-seedling service-icon"></i>
+                <h2 class="service-title">Sustainable Sourcing</h2>
+                <p class="service-description">We pride ourselves on using sustainably sourced ingredients for a healthier planet and fresher flavors.</p>
+            </div>
+        </section>
+    </div>
+       
+  <footer class="footer">
+    <div class="footer-container">
+     
+      <ul class="quick-links">
+        <li><a href="../index.html">Home</a></li>
+              <li><a href="../Services-file/services.html">Services</a></li>
+              <li><a href="../Menu/menu.html">Menu</a></li>
+              <li><a href="../Gift-Card/giftCard.html">Gift Card</a></li>
+              <li><a href="../About/about.html">About</a></li>
+              <li><a href="../Reservations/reservation.html">Reservations</a></li>
+              <li><a href="../Contact/contact.html">Contact Us</a></li>
+      </ul>
+     
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+
+      <p class="copyright">
+        &copy; <span id="year"></span> The Xrabby.  All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <script>
+    const hamburger = document.createElement('div');
+hamburger.className = 'hamburger-icon';
+hamburger.innerHTML = '☰';  
+document.querySelector('nav').appendChild(hamburger);
+
+
+const centerNav = document.querySelector('.center-nav');
+const rightNav = document.querySelector('.right-nav');
+
+hamburger.addEventListener('click', () => {
+  centerNav.classList.toggle('active');
+  rightNav.classList.toggle('active');
+});
+//   footer
+const yearElement = document.getElementById("year");
+const currentYear = new Date().getFullYear();
+yearElement.textContent = currentYear;
+  </script>
+</body>
+</html>

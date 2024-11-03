@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Card - Xrabby</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="giftCard.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="left-nav">Xrabby</div>
+          <div class="center-nav">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../Services-file/services.html">Services</a></li>
+              <li><a href="../Menu/menu.html">Menu</a></li>
+              <li><a href="../Gift-Card/giftCard.html">Gift Card</a></li>
+              <li><a href="../About/about.html">About</a></li>
+              <li><a href="../Reservations/reservation.html">Reservations</a></li>
+              <li><a href="../Contact/contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="right-nav">
+            <div class="search-container">
+              <input type="text" class="search-input" placeholder="Search..." />
+              <svg class="search-icon" width="16" height="16" aria-hidden="true">
+                <circle
+                  cx="6"
+                  cy="6"
+                  r="5"
+                  stroke="black"
+                  stroke-width="1"
+                  fill="none"
+                />
+                <line x1="10" y1="10" x2="15" y2="15" stroke="black" />
+              </svg>
+            </div>
+            <div><button class="btn">Sign In</button></div>
+          </div>
+        </nav>
+      </header>
+    <div class="container">
+        
+        <section class="gift-card-intro">
+            <h1>Gift the Taste of Xrabby</h1>
+            <p>Share the joy of delicious meals with an Xrabby Gift Card. Perfect for any occasion and ideal for anyone who loves a unique dining experience. Give the gift of choice with our customizable gift card options!</p>
+        </section>
+
+      
+        <section class="gift-card-options">
+            <div class="card">
+                <i class="fas fa-gift card-icon"></i>
+                <h2>₹2500 Gift Card</h2>
+                <p>Perfect for a quick bite or a cozy coffee date.</p>
+                <button class="card-button" onclick="selectCard(2500)">Select</button>
+            </div>
+            <div class="card">
+                <i class="fas fa-gift card-icon"></i>
+                <h2>₹5000 Gift Card</h2>
+                <p>An ideal choice for a memorable meal.</p>
+                <button class="card-button" onclick="selectCard(5000)">Select</button>
+            </div>
+            <div class="card">
+                <i class="fas fa-gift card-icon"></i>
+                <h2>₹10000 Gift Card</h2>
+                <p>For a full dining experience or celebration.</p>
+                <button class="card-button" onclick="selectCard(10000)">Select</button>
+            </div>
+        </section>
+
+       
+        <section class="selection-message" id="selectionMessage">
+            <p id="selectedText"></p>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+         
+          <ul class="quick-links">
+            <li><a href="../index.html">Home</a></li>
+              <li><a href="../Services-file/services.html">Services</a></li>
+              <li><a href="../Menu/menu.html">Menu</a></li>
+              <li><a href="../Gift-Card/giftCard.html">Gift Card</a></li>
+              <li><a href="../About/about.html">About</a></li>
+              <li><a href="../Reservations/reservation.html">Reservations</a></li>
+              <li><a href="../Contact/contact.html">Contact Us</a></li>
+          </ul>
+         
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+    
+          <p class="copyright">
+            &copy; <span id="year"></span> The Xrabby.  All rights reserved.
+          </p>
+        </div>
+      </footer>
+    <script src="giftCard.js"></script>
+</body>
+</html>

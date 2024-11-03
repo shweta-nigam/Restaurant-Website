@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Xrabby Restaurant</title>
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left-nav">Xrabby</div>
+      <div class="center-nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Services-file/services.html">Services</a></li>
+          <li><a href="../Menu/menu.html">Menu</a></li>
+          <li><a href="../Gift-Card/giftCard.html">Gift Card</a></li>
+          <li><a href="../About/about.html">About</a></li>
+          <li><a href="../Reservations/reservation.html">Reservations</a></li>
+          <li><a href="../Contact/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="right-nav">
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search..." />
+          <svg class="search-icon" width="16" height="16" aria-hidden="true">
+            <circle
+              cx="6"
+              cy="6"
+              r="5"
+              stroke="black"
+              stroke-width="1"
+              fill="none"
+            />
+            <line x1="10" y1="10" x2="15" y2="15" stroke="black" />
+          </svg>
+        </div>
+        <div><button class="btn">Sign In</button></div>
+      </div>
+    </nav>
+  </header>
+  <section class="services-section">
+    <h1 class="title">Our Services</h1>
+    <p class="subtitle">Explore the wide range of services we offer to make your experience special.</p>
+
+    <div class="services-container">
+      <div class="service-card" data-aos="fade-up">
+        <i class="fas fa-utensils icon"></i>
+        <h2>Dine-In</h2>
+        <p>Enjoy a luxurious dining experience with our multi-cuisine menu.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-concierge-bell icon"></i>
+        <h2>Catering</h2>
+        <p>We offer top-notch catering services for all your events and celebrations.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-truck icon"></i>
+        <h2>Home Delivery</h2>
+        <p>Craving your favorite dishes? Get them delivered hot and fresh to your doorstep.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-cocktail icon"></i>
+        <h2>Bar Service</h2>
+        <p>Unwind at our bar with signature cocktails and premium beverages.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <i class="fas fa-birthday-cake icon"></i>
+        <h2>Event Hosting</h2>
+        <p>Host your private parties, birthdays, or corporate events with us.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+        <i class="fas fa-coffee icon"></i>
+        <h2>Café</h2>
+        <p>Relax with freshly brewed coffee and snacks in our cozy café.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+     
+      <ul class="quick-links">
+        <li><a href="../index.html">Home</a></li>
+              <li><a href="../Services-file/services.html">Services</a></li>
+              <li><a href="../Menu/menu.html">Menu</a></li>
+              <li><a href="../Gift-Card/giftCard.html">Gift Card</a></li>
+              <li><a href="../About/about.html">About</a></li>
+              <li><a href="../Reservations/reservation.html">Reservations</a></li>
+              <li><a href="../Contact/contact.html">Contact Us</a></li>
+      </ul>
+     
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+
+      <p class="copyright">
+        &copy; <span id="year"></span> The Xrabby.  All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

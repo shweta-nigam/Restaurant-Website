@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Xrabby</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="left-nav">Xrabby</div>
+          <div class="center-nav">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../Services-file/services.html">Services</a></li>
+              <li><a href="../Menu/menu.html">Menu</a></li>
+              <li><a href="../Gift-Card/giftCard.html">Gift Card</a></li>
+              <li><a href="../About/about.html">About</a></li>
+              <li><a href="../Reservations/reservation.html">Reservations</a></li>
+              <li><a href="../Contact/contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="right-nav">
+            <div class="search-container">
+              <input type="text" class="search-input" placeholder="Search..." />
+              <svg class="search-icon" width="16" height="16" aria-hidden="true">
+                <circle
+                  cx="6"
+                  cy="6"
+                  r="5"
+                  stroke="black"
+                  stroke-width="1"
+                  fill="none"
+                />
+                <line x1="10" y1="10" x2="15" y2="15" stroke="black" />
+              </svg>
+            </div>
+            <div><button class="btn">Sign In</button></div>
+          </div>
+        </nav>
+      </header>
+    <div class="container">
+       
+        <section class="reservation-intro">
+            <h1>Reserve Your Table at Xrabby</h1>
+            <p>Experience exceptional dining at Xrabby. Reserve your table online to enjoy a memorable meal with us. We look forward to serving you!</p>
+        </section>
+
+       
+        <section class="reservation-form-section">
+            <form class="reservation-form" id="reservationForm">
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                    <input type="text" id="name" placeholder="Your Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+                    <input type="tel" id="phone" placeholder="Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="date"><i class="fas fa-calendar"></i> Reservation Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time"><i class="fas fa-clock"></i> Reservation Time</label>
+                    <input type="time" id="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests"><i class="fas fa-users"></i> Number of Guests</label>
+                    <input type="number" id="guests" min="1" max="20" placeholder="1" required>
+                </div>
+                <button type="button" class="submit-button" onclick="submitReservation()">Reserve Now</button>
+            </form>
+        </section>
+
+        
+        <section class="confirmation-message" id="confirmationMessage">
+            <p id="confirmText"></p>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+         
+          <ul class="quick-links">
+            <li><a href="../index.html">Home</a></li>
+              <li><a href="../Services-file/services.html">Services</a></li>
+              <li><a href="../Menu/menu.html">Menu</a></li>
+              <li><a href="../Gift-Card/giftCard.html">Gift Card</a></li>
+              <li><a href="../About/about.html">About</a></li>
+              <li><a href="../Reservations/reservation.html">Reservations</a></li>
+              <li><a href="../Contact/contact.html">Contact Us</a></li>
+          </ul>
+         
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+    
+          <p class="copyright">
+            &copy; <span id="year"></span> The Xrabby.  All rights reserved.
+          </p>
+        </div>
+      </footer>
+
+    <script src="reservation.js"></script>
+</body>
+</html>
