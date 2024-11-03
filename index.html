@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left-nav">Xrabby</div>
+        <div class="center-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services-file/services.html">Services</a></li>
+            <li><a href="Menu/menu.html">Menu</a></li>
+            <li><a href="Gift-Card/giftCard.html">Gift Card</a></li>
+            <li><a href="About/about.html">About</a></li>
+            <li><a href="Reservations/reservation.html">Reservations</a></li>
+            <li><a href="Contact/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="right-nav">
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search..." />
+            <svg class="search-icon" width="16" height="16" aria-hidden="true">
+              <circle
+                cx="6"
+                cy="6"
+                r="5"
+                stroke="black"
+                stroke-width="1"
+                fill="none"
+              />
+              <line x1="10" y1="10" x2="15" y2="15" stroke="black" />
+            </svg>
+          </div>
+          <div><button class="btn">Sign In</button></div>
+        </div>
+      </nav>
+    </header>
+    <section class="menu-hidden-sec">
+        <div class="menu-section">
+            <h2>Trending Dishes</h2>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <img src="materials/dish1.jpg" alt="Dish 1" />
+                <div class="menu-item-content">
+                  <h3>Grilled Chicken</h3>
+                  <p>Juicy grilled chicken with herbs and spices.</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img src="materials/dish2.jpg" alt="Dish 2" />
+                <div class="menu-item-content">
+                  <h3>Pasta Primavera</h3>
+                  <p>Fresh pasta tossed with seasonal vegetables.</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img src="materials/dish3.jpg" alt="Dish 3" />
+                <div class="menu-item-content">
+                  <h3>Margherita Pizza</h3>
+                  <p>Classic pizza topped with mozzarella and basil.</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img src="materials/dish4.jpg" alt="Dish 4" />
+                <div class="menu-item-content">
+                  <h3>Sushi Platter</h3>
+                  <p>An assortment of fresh sushi and sashimi.</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img src="materials/dish5.jpg" alt="Dish 5" />
+                <div class="menu-item-content">
+                  <h3>Caesar Salad</h3>
+                  <p>Crisp romaine lettuce with creamy Caesar dressing.</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img src="materials/dish6.webp" alt="Dish 6" />
+                <div class="menu-item-content">
+                  <h3>Beef Steak</h3>
+                  <p>Grilled to perfection with a side of veggies.</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img src="materials/dish7.jpg" alt="Dish 7" />
+                <div class="menu-item-content">
+                  <h3>Chocolate Lava Cake</h3>
+                  <p>A rich molten chocolate dessert.</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img src="materials/dish8.jpg" alt="Dish 8" />
+                <div class="menu-item-content">
+                  <h3>Fruit Parfait</h3>
+                  <p>Layers of yogurt, granola, and fresh fruits.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <main>
+      <section class="first-section">
+        <video class="video-background" autoplay muted loop>
+          <source src="./materials/restaurant.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="first-section-content">
+          <h1>Welcome to The Xrabby</h1>
+          <p>Savor the Flavors of Tradition and modern</p>
+          <div class="btn-1st-sec">
+            <button class="btn">Reserve a Table</button>
+            <button class="btn">Order Online</button>
+          </div>
+        </div>
+      </section>
+      <section class="second-section">
+        <h2 class="heading2">Our Signature Dishes</h2>
+        <div class="dishes-container">
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <video class="food-vid" autoplay muted loop>
+                  <source src="./materials/food1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div class="carousel-caption">
+                  <h3>Steak au Poivre</h3>
+                  <p>
+                    A perfect interplay of acid from the wine and sumptuous fat.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <video class="food-vid" autoplay muted loop>
+                  <source src="./materials/food2.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div class="carousel-caption">
+                  <h3>Meaty Sandwich</h3>
+                  <p>
+                    Sandwich are made with a blend of sirloin,chorizo sausage.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <video class="food-vid" autoplay muted loop>
+                  <source src="./materials/food3.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div class="carousel-caption">
+                  <h3>Japnese sushi</h3>
+                  <p>Tast as if you are in Japan yourself.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="third-section">
+        <div class="enjoying-places">
+          <h2 class="heading2">Places Made Just For You</h2>
+          <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 p-3">
+            <div
+              class="bg-body-tertiary flex-fill me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden dark-green-bg-2"
+            >
+              <div class="my-3 p-3">
+                <h2 class="display-5">The Bar</h2>
+                <p class="lead txt-shadow">
+                  Pour Decisions Make The Best Cocktails
+                </p>
+              </div>
+              <div
+                class="bg-dark shadow-sm mx-auto Places-pics"
+                style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
+              >
+                <img class="place-pic" src="materials/bar.jpg" alt="Bar Pic" />
+              </div>
+            </div>
+
+            <div
+              class="text-bg-primary flex-fill pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden light-green-bg"
+            >
+              <div class="my-3 py-3">
+                <h2 class="display-5">Our Gallery Wall</h2>
+                <p class="lead txt-shadow">A Wall Full of Joyful Memmory.</p>
+              </div>
+              <div
+                class="bg-body-tertiary shadow-sm mx-auto Places-pics"
+                style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
+              >
+                <img
+                  class="place-pic"
+                  src="materials/gallery.webp"
+                  alt="Gallery-pic"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 p-3">
+            <div
+              class="bg-body-tertiary flex-fill me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden light-green-bg"
+            >
+              <div class="my-3 p-3">
+                <h2 class="display-5">Private Dining</h2>
+                <p class="lead txt-shadow">
+                  A Palce made Just For You and Your Companions.
+                </p>
+              </div>
+              <div
+                class="bg-dark shadow-sm mx-auto Places-pics"
+                style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
+              >
+                <img
+                  class="place-pic"
+                  src="materials/private-dinning.jpg"
+                  alt="private-dinning"
+                />
+              </div>
+            </div>
+
+            <div
+              class="flex-fill pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden dark-green-bg-2"
+            >
+              <div class="my-3 py-3">
+                <h2 class="display-5">Pool</h2>
+                <p class="lead txt-shadow">Life is Better By the poolside.</p>
+              </div>
+              <div
+                class="bg-body-tertiary shadow-sm mx-auto Places-pics"
+                style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
+              >
+                <img class="place-pic" src="materials/pool.jpg" alt="poolside" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fourth-section">
+        <div class="testimonial-container">
+          <div
+            class="position-relative overflow-hidden p-3 m-md-3 text-center bg-body-tertiary"
+          >
+            <div class="col-md-6 p-lg-5 mx-auto my-5">
+              <h2 class="display-3 fw-bold testimonial-title">Our Happy Customers</h2>
+              <h3 class="fw-normal text-muted mb-3">Try First Trust Later!</h3>
+              <div class="d-flex gap-3 justify-content-center lead fw-normal">
+                <a class="icon-link" href="#">
+                  Learn more
+                  <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+                <a class="icon-link" href="#">
+                  Policies
+                  <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block"></div>
+            <div
+              class="product-device product-device-2 shadow-sm d-none d-md-block"
+            ></div>
+          </div>
+
+          <div class="testimonial-section">
+            <h2 class="heading2">What Our Customers Say</h2>
+            <div class="testimonial-cards">
+              <div class="testimonial-card">
+                <img src="materials/customer1.jpg" alt="Customer 1" class="profile-pic" />
+                <h3 class="customer-name">Sarah J.</h3>
+                <p class="testimonial-text">
+                  "Xrabby’s food is simply delicious! The ambiance is cozy, and
+                  the staff is so friendly. A must-visit!"
+                </p>
+              </div>
+
+              <div class="testimonial-card">
+                <img src="materials/customer2.avif" alt="Customer 2" class="profile-pic" />
+                <h3 class="customer-name">Michael R.</h3>
+                <p class="testimonial-text">
+                  "From appetizers to desserts, everything was top-notch. The
+                  perfect spot for food lovers!"
+                </p>
+              </div>
+
+              <div class="testimonial-card">
+                <img src="materials/customer3.webp" alt="Customer 3" class="profile-pic" />
+                <h3 class="customer-name">Emily W.</h3>
+                <p class="testimonial-text">
+                  "A truly wonderful dining experience. The dishes are crafted
+                  with love, and it shows!"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+  <footer class="footer">
+    <div class="footer-container">
+     
+      <ul class="quick-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Services-file/services.html">Services</a></li>
+        <li><a href="Menu/menu.html">Menu</a></li>
+        <li><a href="Gift-Card/giftCard.html">Gift Card</a></li>
+        <li><a href="About/about.html">About</a></li>
+        <li><a href="Reservations/reservation.html">Reservations</a></li>
+        <li><a href="Contact/contact.html">Contact Us</a></li>
+      </ul>
+     
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+
+      <p class="copyright">
+        &copy; <span id="year"></span> The Xrabby.  All rights reserved.
+      </p>
+    </div>
+  </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
